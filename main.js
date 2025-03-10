@@ -36,7 +36,7 @@ if (form) {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
         msg.innerHTML = "Message sent";
-        setTimeout(() => (msg.innerHTML = ""), 5000);
+        setTimeout(() => (msg.innerHTML = ""), 3000);
         form.reset();
       })
       .catch((error) => console.error("Error!", error.message));
